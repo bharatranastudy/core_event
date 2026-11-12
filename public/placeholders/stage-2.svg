@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1350" fill="none">
+  <rect width="1200" height="1350" fill="#08060c"/>
+  <defs>
+    <radialGradient id="p2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(860 320) rotate(90) scale(420)">
+      <stop stop-color="#e8508c" stop-opacity="0.92"/>
+      <stop offset="0.55" stop-color="#e8508c" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#e8508c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="a2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 760) rotate(90) scale(450)">
+      <stop stop-color="#f59e0b" stop-opacity="0.88"/>
+      <stop offset="0.55" stop-color="#ff5a14" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#ff5a14" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(650 950) rotate(90) scale(300)">
+      <stop stop-color="#0a6cf0" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#0a6cf0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1350" fill="url(#p2)"/>
+  <rect width="1200" height="1350" fill="url(#a2)"/>
+  <rect width="1200" height="1350" fill="url(#b2)"/>
+  <path d="M390 1350C405 970 480 800 600 800C720 800 795 970 810 1350H390Z" fill="#0a0a0f"/>
+  <ellipse cx="600" cy="640" rx="135" ry="155" fill="#0a0a0f"/>
+</svg>

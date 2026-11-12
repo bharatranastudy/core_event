@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-anton), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+  --bg: #000000;
+  --surface: #0b0b0e;
+  --border: #262626;
+  --muted: #9a9a9a;
+  --orange: #ff5a14;
+  --blue: #0a6cf0;
+  --pink: #e8508c;
+}
+
+html {
+  background-color: #000000;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-anton), Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.hero-headline {
+  font-size: clamp(44px, 8.2vw, 108px);
+  line-height: 0.96;
+}
+
+.section-headline {
+  font-size: clamp(40px, 6.5vw, 84px);
+  line-height: 0.98;
+}
+
+.page-headline {
+  font-size: clamp(44px, 8vw, 96px);
+  line-height: 0.98;
+}
+
+/* Accessible visible focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #ff5a14;
+  outline-offset: 2px;
+}
+
+/* Continuous animations */
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes hero-drift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes bubble-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 34s linear infinite;
+}
+
+.animate-hero-drift {
+  display: flex;
+  width: max-content;
+  animation: hero-drift 42s linear infinite;
+}
+
+.animate-hero-drift:hover {
+  animation-play-state: paused;
+}
+
+.animate-bubble-float {
+  animation: bubble-float 4.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee,
+  .animate-hero-drift,
+  .animate-bubble-float {
+    animation: none !important;
+  }
+}

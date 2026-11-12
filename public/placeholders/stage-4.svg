@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" fill="none">
+  <rect width="1200" height="840" fill="#07070c"/>
+  <defs>
+    <radialGradient id="b4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(280 460) rotate(90) scale(340)">
+      <stop stop-color="#0a6cf0" stop-opacity="0.9"/>
+      <stop offset="0.55" stop-color="#0a6cf0" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#0a6cf0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="a4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(920 280) rotate(90) scale(350)">
+      <stop stop-color="#f59e0b" stop-opacity="0.9"/>
+      <stop offset="0.55" stop-color="#ff5a14" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#ff5a14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="840" fill="url(#b4)"/>
+  <rect width="1200" height="840" fill="url(#a4)"/>
+  <path d="M360 840C375 610 460 500 600 500C740 500 825 610 840 840H360Z" fill="#09090e"/>
+  <ellipse cx="600" cy="420" rx="95" ry="105" fill="#09090e"/>
+</svg>

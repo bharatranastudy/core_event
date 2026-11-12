@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #050505;
+  --color-surface: #0b0b0e;
+  --color-surface-elevated: #121217;
+  --color-border-subtle: rgba(255, 255, 255, 0.09);
+  --color-pink-accent: #ff2e93;
+  --color-pink-glow: #ec4899;
+  --color-pink-soft: #ff7ac6;
+
+  --font-display: "Syne", "Space Grotesk", system-ui, sans-serif;
+  --font-heading: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #050505;
+    color: #ffffff;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #ff2e93;
+    color: #ffffff;
+  }
+}
+
+/* Editorial utilities */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-mono-label {
+  font-family: var(--font-mono);
+}
+
+/* Subtle architectural grid background */
+.bg-editorial-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+/* Pink ambient radial glow */
+.glow-pink {
+  box-shadow: 0 0 60px -12px rgba(255, 46, 147, 0.45);
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
+  color: transparent;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222229;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2e93;
+}
